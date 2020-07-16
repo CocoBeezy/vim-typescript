@@ -1,0 +1,8 @@
+--langdef=ts
+--langmap=ts:.ts
+--regex-ts=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\{/\1/,object/
+--regex-ts=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*function[ \t]*\(/\1/,function/
+--regex-ts=/function[ \t]+([A-Za-z0-9._$]+)[ \t]*([^)])/\1/,function/
+--regex-ts=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\[/\1/,array/
+--regex-ts=/([^= ]+)[ \t]*=[ \t]*[^"]'[^']*/\1/,string/
+--regex-ts=/([^= ]+)[ \t]*=[ \t]*[^']"[^"]*/\1/,string/
