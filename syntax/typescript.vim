@@ -283,7 +283,7 @@ if version >= 508 || !exists("did_typescript_syn_inits")
   HiLink tsAsyncKeyword         Keyword
   HiLink tsForAwait             Keyword
   HiLink tsArrowFunction        Type
-  HiLink tsFunction             Function
+  HiLink tsFunction             Type
   HiLink tsGenerator            tsFunction
   HiLink tsArrowFuncArgs        tsFuncArgs
   HiLink tsFuncName             Function
